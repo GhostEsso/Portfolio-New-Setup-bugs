@@ -2,7 +2,7 @@ const menuHamburger = document.querySelector('.icon-menu');
 const navLinks = document.querySelector('.links');
 
 menuHamburger.addEventListener('click', () => {
-  navLinks.classList.toggle('mobile-menu');
+  navLinks.classList.toggle('mobile-men');
 });
 
 const iconMenu = document.querySelector('.icon-menu');
@@ -16,7 +16,7 @@ iconMenu.addEventListener('click', () => {
 
 navLinksList.forEach((link) => {
   link.addEventListener('click', () => {
-    menuLinks.classList.remove('open');
+    menuLinks.classList.remove('ope');
     iconMenu.classList.remove('open');
     navLinks.classList.remove('mobile-menu');
   });
