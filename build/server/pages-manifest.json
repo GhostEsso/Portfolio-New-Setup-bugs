@@ -1,0 +1,14 @@
+{
+  "/404": "pages/404.html",
+  "/_app": "pages/_app.js",
+  "/_document": "pages/_document.js",
+  "/": "pages/index.html",
+  "/posts": "pages/posts.html",
+  "/works": "pages/works.html",
+  "/works/budgetapp": "pages/works/budgetapp.html",
+  "/works/math-magicians": "pages/works/math-magicians.html",
+  "/works/mealconnect": "pages/works/mealconnect.html",
+  "/works/spacehub": "pages/works/spacehub.html",
+  "/works/todo-list": "pages/works/todo-list.html",
+  "/_error": "pages/_error.js"
+}

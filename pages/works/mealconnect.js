@@ -20,6 +20,7 @@ const Work = () => {
             <a
             href="https://github.com/zbahati"
             target="_blank"
+            rel="noreferrer"
             style={{
                 textDecoration: 'none',
                 color: '#000',
@@ -35,6 +36,7 @@ const Work = () => {
             <a
             href="https://github.com/BranBayou"
             target="_blank"
+            rel="noreferrer"
             style={{
                 textDecoration: 'none',
                 color: '#000',
@@ -50,6 +52,7 @@ const Work = () => {
             <a
             href="https://github.com/JoyTaribagshaw"
             target="_blank"
+            rel="noreferrer"
             style={{
                 textDecoration: 'none',
                 color: '#000',
@@ -65,6 +68,7 @@ const Work = () => {
             <a
             href="https://github.com/MargaretTechworld"
             target="_blank"
+            rel="noreferrer"
             style={{
                 textDecoration: 'none',
                 color: '#000',
