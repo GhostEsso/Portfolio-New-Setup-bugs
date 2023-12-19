@@ -5,19 +5,25 @@ import NextLink from "next/link";
 import { ChevronRightIcon } from "@chakra-ui/icons";
 import { BioSection, BioYear } from "../components/bio";
 import Layout from "../components/layouts/article";
-import { IoLogoTwitter, IoLogoInstagram, IoLogoGithub, IoLogoFacebook} from 'react-icons/io';
+import { IoLogoTwitter, IoLogoInstagram, IoLogoGithub } from 'react-icons/io';
+import React from 'react';
 
 const Page = () => {
+
+  const downloadResume = () => {
+    const resumeUrl = 'https://www.dropbox.com/scl/fi/57gguqrnjn6vw1ge8r2h2/Resume.pdf?rlkey=9lwoqrg8pyoye05b7haguyaur&dl=0';
+    window.open(resumeUrl, '_blank');
+  };
     return (
         <Layout>
         <Container>
             <Box borderRadius="lg" bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')} p={3} mb={6} align="center"> 
-                Hello I&apos;m a fullstack developer based in Haïti!
+                Hello I&apos;m a fullstack developer based in Togo 🇹🇬
             </Box>
             <Box display={{md: 'flex'}}>
                 <Box flexGrow={1}>
                     <Heading as="h2" variant="page-title">
-                        Didier Peran Ganthier
+                        Essohanam TAMBANA
                     </Heading>
                     <p>Full Stack Developer </p>
                 </Box>
@@ -30,21 +36,14 @@ const Page = () => {
                     Work
                 </Heading>
                 <Paragraph>
-                Hi, I&apos;m Didier, I&apos;m a full-stack software engineer with 4+ years of experience specializing in Flutter, Javascript, and React. 
-                In 2019 I completed the CodePath Bootcamp teaching me Android Developement and how to use collaborative tools.
-                Currently doing Microverse, a remote software development program that uses pair programming and project building to teach development. 
-                Last year I worked as a Frontend Developer and this experience taught me how to work with corporate businesses and handle tight deadlines. 
-                I&apos;ve worked on a number of projects in the past year: A banking website, an app allowing people to request blood, and a ticketing app that recently reached 1k active users. 
-                Being passionate about coding made me part of the 1% active GitHub users in my country and I have an active streak of 100+ days of coding.
-                Currently, I am working on my product called{' '}
-                <NextLink href="works/thespot">
-                    <Link>The Spot Events</Link>
-                </NextLink>.
+                Hi, I&apos;m Essohanam, call me Philippe as well. I&apos;m a full-stack software engineer with 1 year of experience specializing in Javascript, and React. 
+                At the end of 2022 and the beginning of 2023, I joined Microverse. Microverse is a remote software development program that uses pair programming and project building to teach development. 
+                Last year, during my learning journey, I built strong projects as a Frontend Developer and this experience taught me how to work with corporate businesses and handle tight deadlines.
                 I&apos;m very passionate about coding and I&apos;m always looking for new challenges and opportunities to learn and grow.
                 </Paragraph>
                 <Box align="center" my={4}>
-                    <NextLink href="works/">
-                        <Button rightIcon={<ChevronRightIcon/>} colorScheme="teal">
+                    <NextLink href="/works">
+                        <Button rightIcon={<ChevronRightIcon/>} colorScheme="green">
                             My Portfolio
                         </Button>
                     </NextLink>
@@ -56,52 +55,25 @@ const Page = () => {
                     Bio
                 </Heading>
                 <BioSection>
-                    <BioYear>1998</BioYear>
-                    Born in Port-au-Prince, Haiti.   
-                </BioSection>
-                <BioSection>
-                    <BioYear>2014</BioYear>
-                    Started coding.  
-                </BioSection>
-                <BioSection>
-                    <BioYear>2018</BioYear>
-                    Started studying Computer Science at Université Espoir.  
-                </BioSection> 
-                <BioSection>
-                    <BioYear>2019</BioYear>
-                    Took part at Codepath&apos;s Mobile App Development Bootcamp.
-                </BioSection>
-                <BioSection>
-                    <BioYear>2020</BioYear>
-                    Internship at Transition Digital as a Mobile Developer. Fixed 20+ bugs and implemented 10+ features in in-production apps.
-                </BioSection> 
-                <BioSection>
-                    <BioYear>2021</BioYear>
-                    Launched The Spot Events. A 1k users platform connecting event lovers, allowing check-ins, promotions and online payment. 
-                </BioSection>
-                <BioSection>
-                    <BioYear>2021</BioYear>
-                    Working on Alerte Rouge in partnership with Banj and CNTS. A platform for the public to share blood requests and plan donations at CNTS.
+                    <BioYear>2016</BioYear>
+                    Bachelor degree in International Law and Community Law.
                 </BioSection>
                 <BioSection>
                     <BioYear>2022</BioYear>
-                    Launched Haiti Blockchain Alliance with Banj. A community of blockchain developers and enthusiasts in Haiti.
+                    In 2022, I began developing an interest in programming 🖥️ and started self-teaching myself.
                 </BioSection>
-                <BioSection>
-                    <BioYear>2022</BioYear>
+                      <BioSection>
+                    <BioYear>2023</BioYear>
                     Started Microverse. A remote software development program that uses pair programming and project building to teach development. 
                 </BioSection>  
             </Section>
             <Section delay={0.3}>
                 <Heading as="h3" variant="section-title">
-                    I ♥
+                    I ❤️
                 </Heading>
                 <Paragraph>
-                    God, Music, Technology,{' '}
-                    <Link href="https://www.instagram.com/p/BTcpaB3gltu/" target="_blank">Drawing</Link>
-                    , Coffee, {' '}
-                    <Link href="https://www.instagram.com/didierthelilballer/" target="_blank">Basketball</Link> 
-                    , Machine Learning and Philosophy.
+                    God, Technology, Music, Horror Movies and Gaming <br />
+                    Football, Anime.
                 </Paragraph>        
             </Section> 
             <Section delay={0.3}>
@@ -110,51 +82,137 @@ const Page = () => {
         </Heading>
         <List>
           <ListItem>
-            <Link href="https://github.com/didierganthier" target="_blank">
+            <Link href="https://github.com/GhostEsso" target="_blank">
               <Button
                 variant="ghost"
                 colorScheme="teal"
                 leftIcon={<Icon as={IoLogoGithub} />}
               >
-                @didierganthier
+                @GhostEsso
               </Button>
             </Link>
           </ListItem>
           <ListItem>
-            <Link href="https://twitter.com/didierganthier_" target="_blank">
+            <Link href="https://x.com/TambanaEssohana?t=4FF84aFOHgOplULHvz-6pQ&s=09" target="_blank">
               <Button
                 variant="ghost"
                 colorScheme="teal"
                 leftIcon={<Icon as={IoLogoTwitter} />}
               >
-                @didierganthier_
+                @essohana_tambana
               </Button>
             </Link>
           </ListItem>
           <ListItem>
-            <Link href="https://instagram.com/didierganthier" target="_blank">
+            <Link href="https://www.instagram.com/phil_essohanam" target="_blank">
               <Button
                 variant="ghost"
                 colorScheme="teal"
                 leftIcon={<Icon as={IoLogoInstagram} />}
               >
-                @didierganthier
-              </Button>
-            </Link>
-          </ListItem>
-          <ListItem>
-            <Link href="https://www.facebook.com/ganthier.didier.79" target="_blank">
-              <Button
-                variant="ghost"
-                colorScheme="teal"
-                leftIcon={<Icon as={IoLogoFacebook} />}
-              >
-                @ganthier.didier.79_
+                @phil_essohanam
               </Button>
             </Link>
           </ListItem>
         </List>
-        </Section>            
+        </Section>
+
+        <Section delay={0.5}>
+                    <button
+                        onClick={downloadResume}
+                        style={{
+                            padding: '10px 20px',
+                            borderRadius: '5px',
+                            border: 'none',
+                            background: '#007bff',
+                            color: '#fff',
+                            fontSize: '16px',
+                            cursor: 'pointer',
+                            boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)',
+                            transition: 'background 0.3s ease',
+                        }}
+                    >
+                        Get my Resume
+                    </button>
+        </Section>
+
+        <Section id="contact" delay={0.4}>
+                    <Heading id="contact" as="h3" variant="section-title">
+                        Contact Me
+                    </Heading>
+                    <form id="form" action="https://formspree.io/f/myyawnzb" method="post" style={{ maxWidth: '400px', margin: '0 auto' }}>
+                        <label htmlFor="name">Name:</label>
+                        <input 
+                            type="text" 
+                            id="name" 
+                            name="name" 
+                            required 
+                            style={{ 
+                                padding: '8px',
+                                marginBottom: '16px',
+                                borderRadius: '4px',
+                                border: '1px solid #ccc',
+                                width: '100%',
+                                boxSizing: 'border-box',
+                                color: 'black'
+                            }} 
+                            placeholder="Enter your name"
+                        />
+                        
+                        <label htmlFor="email">Email:</label>
+                        <input 
+                            type="email" 
+                            id="email" 
+                            name="email" 
+                            required 
+                            style={{ 
+                                padding: '8px',
+                                marginBottom: '16px',
+                                borderRadius: '4px',
+                                border: '1px solid #ccc',
+                                width: '100%',
+                                boxSizing: 'border-box',
+                                color: 'black'
+                            }} 
+                            placeholder="Enter your email"
+                        />
+                        
+                        <label htmlFor="message">Message:</label>
+                        <textarea 
+                            id="message" 
+                            name="message" 
+                            required
+                            style={{ 
+                                padding: '8px',
+                                marginBottom: '16px',
+                                borderRadius: '4px',
+                                border: '1px solid #ccc',
+                                width: '100%',
+                                height: '100px',
+                                resize: 'vertical',
+                                boxSizing: 'border-box',
+                                color: 'black'
+                            }} 
+                            placeholder="Enter your message"
+                        ></textarea>
+                        
+                        <button 
+                            type="submit" 
+                            style={{ 
+                                padding: '8px 16px',
+                                borderRadius: '4px',
+                                border: 'none',
+                                background: '#007bff',
+                                color: '#fff',
+                                cursor: 'pointer',
+                                width: '100%',
+                                boxSizing: 'border-box',
+                            }}
+                        >
+                            Submit
+                        </button>
+                    </form>
+                </Section>            
         </Container>
         </Layout>
     );

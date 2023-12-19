@@ -13,13 +13,14 @@ const Work = () => {
                 </Title>
             </Container>
             <P>
-                &quot;To-do list&quot; is a tool that helps to organize your day.
-                A simple website that allows for doing that, and built using ES6 and Webpack!
+                &quot;To-do list&quot; a simple and efficient task management application. Stay organized and
+                productive with this user-friendly interface that allows you to effortlessly create, track, and manage your daily tasks.
+                 Built using HTML, CSS, ES6 and Webpack!
             </P>
             <List ml={4} my={4}>
                 <ListItem>
                     <Meta> Website </Meta>
-                    <Link href="https://didierganthier.github.io/todo-list/">
+                    <Link href="https://ghostesso.github.io/toDoList/">
                         Website <ExternalLinkIcon mr={2} />
                     </Link>
                 </ListItem>

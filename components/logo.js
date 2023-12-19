@@ -30,7 +30,7 @@ const Logo = () => {
                         fontWeight="bold"
                         ml={3}
                     >
-                        Didier Peran Ganthier
+                        Essohanam TAMBANA
                     </Text>
                 </LogoBox>
             </a>
