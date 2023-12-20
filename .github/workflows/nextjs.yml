@@ -94,4 +94,4 @@ jobs:
         id: deployment
         uses: actions/deploy-pages@v3
         with:
-          token: ${{ secrets.GHOSTESSO }
+          token: ${{ secrets.GHOSTESSO }}
