@@ -29,7 +29,7 @@ const Work = () => {
                     <span>ES6, Webpack</span>
                 </ListItem>
             </List>
-            <WorkImage src="/images/works/todo-list.png" alt="Instagram Clone" />
+            <WorkImage src="/images/works/todo-list.png" alt="to do list" />
         </Layout>
     )
 }

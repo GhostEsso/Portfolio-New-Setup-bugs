@@ -29,7 +29,7 @@ const Work = () => {
                     <span>Ruby on Rails</span>
                 </ListItem>
             </List>
-            <WorkImage src="/images/works/budgetapp.png" alt="Instagram Clone" />
+            <WorkImage src="/images/works/budgetapp.png" alt="budgetapp" />
         </Layout>
     )
 }

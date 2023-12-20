@@ -100,7 +100,7 @@ const Work = () => {
                     <span> React, Ruby on Rails, PostgreSql</span>
                 </ListItem>
             </List>
-            <WorkImage src="/images/works/mealconnect.png" alt="MEAL CONNECT" />
+            <WorkImage src="/images/works/mealconnect.png" alt="meal connect" />
         </Layout>        
     )
 }
