@@ -1,5 +1,12 @@
-module.exports = {
-  reactStrictMode: true,
-  swcMinify: true,
-  distDir: 'build', // Nom du dossier de sortie personnalisé
+/** 
+ * @type {import('next').NextConfig}
+*/
+const NextConfig = {
+  output: 'export',
+  distDir: 'dist',
+  images: {
+    unoptimized: true,
+  },
 };
+
+module.exports = NextConfig;
