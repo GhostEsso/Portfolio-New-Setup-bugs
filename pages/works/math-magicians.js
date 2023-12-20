@@ -30,7 +30,7 @@ const Work = () => {
                     <span>React, Jest, API</span>
                 </ListItem>
             </List>
-            <WorkImage src="/images/works/math-magicians.png" alt="Instagram Clone" />
+            <WorkImage src="/images/works/math-magicians.png" alt="math-magician" />
         </Layout>
     )
 }
