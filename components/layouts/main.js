@@ -17,10 +17,10 @@ const Main = ({ children, router }) => {
         <link rel="apple-touch-icon" href="image.png" />
         <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:site" content="@didierganthier_" />
-        <meta name="twitter:creator" content="@didierganthier_" />
+        <meta name="twitter:site" content="@essohanamtambana_" />
+        <meta name="twitter:creator" content="@essohanamtambana_" />
         <meta name="twitter:image" content="/card.png" />
-        <meta property="og:site_name" content="Didier Ganthier's Homepage" />
+        <meta property="og:site_name" content="Essohanam TAMBANA's Homepage" />
         <meta property="og:type" content="website" />
         <meta property="og:image" content="/card.png" />
         <title>Essohanam TAMBANA - Homepage</title>
