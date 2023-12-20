@@ -95,3 +95,5 @@ jobs:
         uses: actions/deploy-pages@v3
         with:
           token: ${{ secrets.GHOSTESSO }}
+          BRANCH: dev
+          FOLDER: ./out
