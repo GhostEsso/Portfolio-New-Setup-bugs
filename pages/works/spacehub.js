@@ -45,7 +45,7 @@ const Work = () => {
                     <span>Ruby on Rails</span>
                 </ListItem>
             </List>
-            <WorkImage src="/images/works/spacehub.png" alt="spacehub" />
+            <WorkImage src="../images/works/spacehub.png" alt="spacehub" />
         </Layout>        
     )
 }
