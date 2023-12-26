@@ -11,9 +11,9 @@ const Main = ({ children, router }) => {
     <Box as="main" pb={8}>
       <Head>
       <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="description" content="Didier Ganthier's homepage" />
-        <meta name="author" content="Didier Ganthier" />
-        <meta name="author" content="didierganthier" />
+        <meta name="description" content="Essohanam TAMBANA's homepage" />
+        <meta name="author" content="Essohanam TAMBANA" />
+        <meta name="author" content="Essohanam TAMBANA" />
         <link rel="apple-touch-icon" href="image.png" />
         <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
         <meta name="twitter:card" content="summary_large_image" />
