@@ -12,8 +12,8 @@ const Works = () => {
     return (
         <Layout>
             <Container>
-                <Heading as="h3" fontSize={20} mb={4}>
-                    My Projects
+                <Heading id="works" as="h3" fontSize={20} mb={4} color="green">
+                    My Recent Works
                 </Heading>
                 <SimpleGrid columns={[1, 1, 2]} gap={6}>
                     <Section delay={0.3}>
