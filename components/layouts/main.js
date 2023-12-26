@@ -15,7 +15,7 @@ const Main = ({ children, router }) => {
         <meta name="author" content="Didier Ganthier" />
         <meta name="author" content="didierganthier" />
         <link rel="apple-touch-icon" href="image.png" />
-        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+        <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@essohanamtambana_" />
         <meta name="twitter:creator" content="@essohanamtambana_" />

@@ -7,10 +7,8 @@ export default class Document extends NextDocument {
         return (
             <Html lang="en">
                 <Head>
-                    {/* Ajoute ici tes éléments de head personnalisés */}
                     <meta charSet="UTF-8" />
                     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-                    {/* ... d'autres balises meta, link, etc. */}
                 </Head>
                 <body>
                     <ColorModeScript initialColorMode={theme.config.initialColorMode}/>

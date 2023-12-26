@@ -11,8 +11,9 @@ import Layout from "../components/layouts/article";
 const Works = () => {
     return (
         <Layout>
+        <Divider my={6} />
             <Container>
-                <Heading id="works" as="h3" fontSize={20} mb={4} color="green">
+                <Heading id="works" as="h3" fontSize={20} mb={4} textDecoration={"underline"}>
                     My Recent Works
                 </Heading>
                 <SimpleGrid columns={[1, 1, 2]} gap={6}>
@@ -57,6 +58,7 @@ const Works = () => {
                             </WorkGridItem>
                         </Section>
                     </SimpleGrid>
+                    <Divider my={6} />
                 </Section>
             </Container>
         </Layout>

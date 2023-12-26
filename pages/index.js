@@ -80,7 +80,7 @@ const Page = () => {
         </Section>
         <Works />
 
-            {/*Buttons */}
+        {/*Buttons */}
         <div style={{ position: 'fixed', bottom: '20px', right: '20px' }}>
           <Link href="#works" passHref>
             <Button m={2}> My Recent Works</Button>
@@ -123,7 +123,10 @@ const Page = () => {
           </BioSection>
           <BioSection>
             <BioYear>2016 - present</BioYear>
-            Bachelor degree in International Law and Community Law.
+            Technician, Designer: Maintained IT systems for various clients,
+            specializing in operating system installations and antivirus
+            updates. Created custom logos for clients' businesses to enhance
+            their brand identities. 
           </BioSection>
           <BioSection>
             <BioYear>2022</BioYear>
