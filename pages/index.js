@@ -125,7 +125,7 @@ const Page = () => {
             <BioYear>2016 - present</BioYear>
             Technician, Designer: Maintained IT systems for various clients,
             specializing in operating system installations and antivirus
-            updates. Created custom logos for clients' businesses to enhance
+            updates. Created custom logos for clients businesses to enhance
             their brand identities. 
           </BioSection>
           <BioSection>
