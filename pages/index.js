@@ -91,7 +91,7 @@ const Page = () => {
           <Link href="#contact" passHref>
             <Button m={2}>Contact</Button>
           </Link>
-          <Link href="#work" passHref>
+          <Link href="/" passHref>
             <Button m={2}>Me</Button>
           </Link>
         </div>
