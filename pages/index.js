@@ -17,6 +17,7 @@ import Layout from '../components/layouts/article'
 import { IoLogoTwitter, IoLogoInstagram, IoLogoGithub } from 'react-icons/io'
 import React from 'react'
 import Works from './works'
+import ScrollButton from './ScrollButton';
 
 const Page = () => {
   const downloadResume = () => {
@@ -79,22 +80,6 @@ const Page = () => {
           </Paragraph>
         </Section>
         <Works />
-
-        {/*Buttons */}
-        <div style={{ position: 'fixed', bottom: '20px', right: '20px' }}>
-          <Link href="#works" passHref>
-            <Button m={2}> My Recent Works</Button>
-          </Link>
-          <Link href="#bio" passHref>
-            <Button m={2}>Bio</Button>
-          </Link>
-          <Link href="#contact" passHref>
-            <Button m={2}>Contact</Button>
-          </Link>
-          <Link href="/" passHref>
-            <Button m={2}>Me</Button>
-          </Link>
-        </div>
 
         <Section delay={0.2}>
           <Heading as="h3" variant="section-title">
@@ -293,6 +278,7 @@ const Page = () => {
               Submit
             </button>
           </form>
+          <ScrollButton />
         </Section>
       </Container>
     </Layout>
