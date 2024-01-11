@@ -20,9 +20,15 @@ const Work = () => {
             </P>
             <List ml={4} my={4}>
                 <ListItem>
-                    <Meta> Website </Meta>
+                    <Meta> Webapp </Meta>
                     <Link href="https://math-magician-htg1.onrender.com/">
-                        Website <ExternalLinkIcon mr={2} />
+                        WebApp <ExternalLinkIcon mr={2} />
+                    </Link>
+                </ListItem>
+                <ListItem>
+                    <Meta> SOURCE CODE </Meta>
+                    <Link href="https://github.com/GhostEsso/Math-Magician">
+                        Github <ExternalLinkIcon mr={2} />
                     </Link>
                 </ListItem>
                 <ListItem>
