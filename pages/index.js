@@ -123,6 +123,10 @@ const Page = () => {
             Started Microverse. A remote software development program that uses
             pair programming and project building to teach development.
           </BioSection>
+          <BioSection>
+            <BioYear>2023</BioYear>
+            Graduated as a Full-Stack software engineer.
+          </BioSection>
         </Section>
         <Section delay={0.3}>
           <Heading as="h3" variant="section-title">
