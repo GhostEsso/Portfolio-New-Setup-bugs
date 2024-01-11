@@ -14,7 +14,7 @@ import Paragraph from '../components/paragraph'
 import Section from '../components/section'
 import { BioSection, BioYear } from '../components/bio'
 import Layout from '../components/layouts/article'
-import { IoLogoTwitter, IoLogoInstagram, IoLogoGithub } from 'react-icons/io'
+import { IoLogoTwitter, IoLogoInstagram, IoLogoGithub, IoLogoLinkedin } from 'react-icons/io'
 import React from 'react'
 import Works from './works'
 import ScrollButton from './ScrollButton';
@@ -146,6 +146,20 @@ const Page = () => {
                   leftIcon={<Icon as={IoLogoGithub} />}
                 >
                   @GhostEsso
+                </Button>
+              </Link>
+            </ListItem>
+            <ListItem>
+              <Link
+                href="https://www.linkedin.com/in/essohanam-tambana/"
+                target="_blank"
+              >
+                <Button
+                  variant="ghost"
+                  colorScheme="teal"
+                  leftIcon={<Icon as={IoLogoLinkedin} />}
+                >
+                  @Essohanam_Tambana
                 </Button>
               </Link>
             </ListItem>

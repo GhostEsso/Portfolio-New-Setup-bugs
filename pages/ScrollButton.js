@@ -1,3 +1,8 @@
+/**
+ * The ScrollButton component is a button that scrolls to the closest section on the page when clicked,
+ * and displays an arrow indicating the scroll direction.
+ * @returns The ScrollButton component is being returned.
+ */
 import { useEffect, useState } from 'react';
 import styles from '../styles/styles.module.css';
 
