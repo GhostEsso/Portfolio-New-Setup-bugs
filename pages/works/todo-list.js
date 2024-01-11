@@ -25,6 +25,12 @@ const Work = () => {
                     </Link>
                 </ListItem>
                 <ListItem>
+                    <Meta> SOURCE CODE </Meta>
+                    <Link href="https://github.com/GhostEsso/toDoList">
+                        Github <ExternalLinkIcon mr={2} />
+                    </Link>
+                </ListItem>
+                <ListItem>
                     <Meta> Stack </Meta>
                     <span>ES6, Webpack</span>
                 </ListItem>
