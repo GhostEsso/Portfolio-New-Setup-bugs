@@ -41,6 +41,12 @@ const Work = () => {
                     </Link>
                 </ListItem>
                 <ListItem>
+                    <Meta> Github </Meta>
+                    <Link href="https://github.com/GhostEsso/SpaceTravelersHub">
+                    Source Code <ExternalLinkIcon mr={2} />
+                    </Link>
+                </ListItem>
+                <ListItem>
                     <Meta> Stack </Meta>
                     <span>Ruby on Rails</span>
                 </ListItem>

@@ -26,9 +26,9 @@ const Work = () => {
                     </Link>
                 </ListItem>
                 <ListItem>
-                    <Meta> SOURCE CODE </Meta>
+                    <Meta> Github </Meta>
                     <Link href="https://github.com/GhostEsso/Math-Magician">
-                        Github <ExternalLinkIcon mr={2} />
+                    Source Code <ExternalLinkIcon mr={2} />
                     </Link>
                 </ListItem>
                 <ListItem>
