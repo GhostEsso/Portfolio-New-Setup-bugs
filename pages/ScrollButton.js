@@ -25,19 +25,33 @@ const ScrollButton = () => {
 
   const scrollToSection = () => {
     const sections = document.querySelectorAll('section');
-    let currentPosition = window.scrollY || window.pageYOffset;
 
-    for (let i = 0; i < sections.length; i++) {
-      const sectionPosition = sections[i].offsetTop - 50;
-      if (currentPosition < sectionPosition) {
-        sections[i].scrollIntoView({ behavior: 'smooth' });
-        break;
-      }
+    if (sections.length === 0) {
+      return; // Si aucune section trouvée, sortir de la fonction
     }
+
+    let closestSection = sections[0];
+    let closestDistance = Math.abs(
+      window.scrollY - closestSection.offsetTop + 50
+    );
+
+    sections.forEach(section => {
+      const sectionDistance = Math.abs(
+        window.scrollY - section.offsetTop + 50
+      );
+      if (sectionDistance < closestDistance) {
+        closestSection = section;
+        closestDistance = sectionDistance;
+      }
+    });
+
+    closestSection.scrollIntoView({ behavior: 'smooth' });
   };
 
   return (
-    <button onClick={scrollToSection} className={styles.scrollButton}>{scrollDirection}</button>
+    <button onClick={scrollToSection} className={styles.scrollButton}>
+      {scrollDirection}
+    </button>
   );
 };
 

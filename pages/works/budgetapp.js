@@ -19,13 +19,19 @@ const Work = () => {
             </P>
             <List ml={4} my={4}>
                 <ListItem>
-                    <Meta> Website </Meta>
+                    <Meta> WEBSITE </Meta>
                     <Link href="https://moyin-3unn.onrender.com/">
                         Website <ExternalLinkIcon mr={2} />
                     </Link>
                 </ListItem>
                 <ListItem>
-                    <Meta> Stack </Meta>
+                    <Meta> SOURCE CODE </Meta>
+                    <Link href="https://github.com/GhostEsso/my-budget-app">
+                        GITHUB <ExternalLinkIcon mr={2} />
+                    </Link>
+                </ListItem>
+                <ListItem>
+                    <Meta> STACK </Meta>
                     <span>Ruby on Rails</span>
                 </ListItem>
             </List>
