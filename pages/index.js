@@ -22,7 +22,7 @@ import ScrollButton from './ScrollButton';
 const Page = () => {
   const downloadResume = () => {
     const resumeUrl =
-      'https://www.dropbox.com/scl/fi/57gguqrnjn6vw1ge8r2h2/Resume.pdf?rlkey=9lwoqrg8pyoye05b7haguyaur&dl=0'
+      'https://www.dropbox.com/scl/fi/iny6s6fcqksbwtq7j1t4n/Essohanam_Tambana_Resume.pdf?rlkey=bsyft4rpuhij2bbs9d79eqfvt&dl=0'
     window.open(resumeUrl, '_blank')
   }
   return (
