@@ -296,7 +296,6 @@ const Page = () => {
               Submit
             </button>
           </form>
-          <ScrollButton />
         </Section>
       </Container>
     </Layout>
