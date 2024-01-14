@@ -17,7 +17,6 @@ import Layout from '../components/layouts/article'
 import { IoLogoTwitter, IoLogoInstagram, IoLogoGithub, IoLogoLinkedin } from 'react-icons/io'
 import React from 'react'
 import Works from './works'
-import ScrollButton from './ScrollButton';
 
 const Page = () => {
   const downloadResume = () => {
