@@ -1,5 +1,5 @@
-import { useState, useEffect } from 'react';
-import { IoIosArrowUp } from 'react-icons/io';
+import { useState, useEffect } from 'react'
+import { IoIosArrowUp } from 'react-icons/io'
 import {
   Box,
   Container,
@@ -16,7 +16,12 @@ import Paragraph from '../components/paragraph'
 import Section from '../components/section'
 import { BioSection, BioYear } from '../components/bio'
 import Layout from '../components/layouts/article'
-import { IoLogoTwitter, IoLogoInstagram, IoLogoGithub, IoLogoLinkedin } from 'react-icons/io'
+import {
+  IoLogoTwitter,
+  IoLogoInstagram,
+  IoLogoGithub,
+  IoLogoLinkedin
+} from 'react-icons/io'
 import React from 'react'
 import Works from './works'
 
@@ -24,28 +29,28 @@ const Page = () => {
   const downloadResume = () => {
     const resumeUrl =
       'https://www.dropbox.com/scl/fi/iny6s6fcqksbwtq7j1t4n/Essohanam_Tambana_Resume.pdf?rlkey=bsyft4rpuhij2bbs9d79eqfvt&dl=0'
-    window.open(resumeUrl, '_blank');
-  };
+    window.open(resumeUrl, '_blank')
+  }
 
-  const [scrollPosition, setScrollPosition] = useState(0);
+  const [scrollPosition, setScrollPosition] = useState(0)
 
   useEffect(() => {
     const handleScroll = () => {
-      setScrollPosition(window.scrollY);
-    };
+      setScrollPosition(window.scrollY)
+    }
 
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener('scroll', handleScroll)
 
     return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
+      window.removeEventListener('scroll', handleScroll)
+    }
+  }, [])
 
-  const showBackToToButton = scrollPosition > 200;
-  
+  const showBackToToButton = scrollPosition > 200
+
   const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: 'smooth'});
-  };
+    window.scrollTo({ top: 0, behavior: 'smooth' })
+  }
 
   return (
     <Layout>
@@ -89,16 +94,12 @@ const Page = () => {
             Work
           </Heading>
           <Paragraph>
-            Hi, I&apos;m Essohanam, call me Philippe as well. I&apos;m a
-            full-stack software engineer with 1 year of experience specializing
-            in Javascript, and React. At the end of 2022 and the beginning of
-            2023, I joined Microverse. Microverse is a remote software
-            development program that uses pair programming and project building
-            to teach development. Last year, during my learning journey, I built
-            strong projects as a Frontend Developer and this experience taught
-            me how to work with corporate businesses and handle tight deadlines.
-            I&apos;m very passionate about coding and I&apos;m always looking
-            for new challenges and opportunities to learn and grow.
+            Hi, I'm Essohanam, a full-stack software engineer skilled in
+            Javascript and React. I honed my expertise at Microverse, a remote
+            program emphasizing pair programming. As a Frontend Developer, I
+            delivered strong projects, gaining experience in corporate
+            collaboration and meeting tight deadlines. Passionate about coding,
+            I'm always eager for new challenges and growth opportunities.
           </Paragraph>
         </Section>
         <Works />
@@ -133,7 +134,7 @@ const Page = () => {
             Technician, Designer: Maintained IT systems for various clients,
             specializing in operating system installations and antivirus
             updates. Created custom logos for clients businesses to enhance
-            their brand identities. 
+            their brand identities.
           </BioSection>
           <BioSection>
             <BioYear>2022</BioYear>
@@ -321,22 +322,22 @@ const Page = () => {
         </Section>
         {showBackToToButton && (
           <Button
-          onClick={scrollToTop}
-          style={{
-            position: 'fixed',
-            bottom: '20px',
-            right: '20px',
-            borderRadius: '5px',
-            background: '#007bff',
-            color: '#fff',
-            fontSize: '16px',
-            cursor: 'pointer',
-            boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)',
-            transition: 'background 0.3s ease',
-          }}
-        >
-        <IoIosArrowUp />
-        </Button>
+            onClick={scrollToTop}
+            style={{
+              position: 'fixed',
+              bottom: '20px',
+              right: '20px',
+              borderRadius: '5px',
+              background: '#007bff',
+              color: '#fff',
+              fontSize: '16px',
+              cursor: 'pointer',
+              boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)',
+              transition: 'background 0.3s ease'
+            }}
+          >
+            <IoIosArrowUp />
+          </Button>
         )}
       </Container>
     </Layout>
