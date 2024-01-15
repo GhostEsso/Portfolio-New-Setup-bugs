@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { IoIosArrowUp } from 'react-icons/io';
 import {
   Box,
   Container,
@@ -23,8 +24,29 @@ const Page = () => {
   const downloadResume = () => {
     const resumeUrl =
       'https://www.dropbox.com/scl/fi/iny6s6fcqksbwtq7j1t4n/Essohanam_Tambana_Resume.pdf?rlkey=bsyft4rpuhij2bbs9d79eqfvt&dl=0'
-    window.open(resumeUrl, '_blank')
-  }
+    window.open(resumeUrl, '_blank');
+  };
+
+  const [scrollPosition, setScrollPosition] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrollPosition(window.scrollY);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+  const showBackToToButton = scrollPosition > 200;
+  
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth'});
+  };
+
   return (
     <Layout>
       <Container>
@@ -297,6 +319,25 @@ const Page = () => {
             </button>
           </form>
         </Section>
+        {showBackToToButton && (
+          <Button
+          onClick={scrollToTop}
+          style={{
+            position: 'fixed',
+            bottom: '20px',
+            right: '20px',
+            borderRadius: '5px',
+            background: '#007bff',
+            color: '#fff',
+            fontSize: '16px',
+            cursor: 'pointer',
+            boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)',
+            transition: 'background 0.3s ease',
+          }}
+        >
+        <IoIosArrowUp />
+        </Button>
+        )}
       </Container>
     </Layout>
   )
