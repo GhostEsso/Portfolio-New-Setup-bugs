@@ -94,12 +94,12 @@ const Page = () => {
             Work
           </Heading>
           <Paragraph>
-            Hi, I'm Essohanam, a full-stack software engineer skilled in
+            Hi, I&apos;m Essohanam, a full-stack software engineer skilled in
             Javascript and React. I honed my expertise at Microverse, a remote
             program emphasizing pair programming. As a Frontend Developer, I
             delivered strong projects, gaining experience in corporate
             collaboration and meeting tight deadlines. Passionate about coding,
-            I'm always eager for new challenges and growth opportunities.
+            I&apos;m always eager for new challenges and growth opportunities.
           </Paragraph>
         </Section>
         <Works />
