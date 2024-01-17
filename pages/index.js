@@ -115,7 +115,7 @@ const Page = () => {
             Database Management, CLI, API Design, Version Control
           </BioSection>
         </Section>
-        <Section delay={0.2}>
+        {/* <Section delay={0.2}>
           <Heading id="bio" as="h3" variant="section-title">
             BIO
           </Heading>
@@ -144,7 +144,7 @@ const Page = () => {
             <BioYear>2023</BioYear>
             Graduated as a Full-Stack software engineer.
           </BioSection>
-        </Section>
+        </Section> */}
         <Section delay={0.3}>
           <Heading as="h3" variant="section-title">
             I ❤️
