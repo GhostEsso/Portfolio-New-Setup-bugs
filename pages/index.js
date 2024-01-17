@@ -32,7 +32,7 @@ const Page = () => {
     window.open(resumeUrl, '_blank')
   }
 
-  const [scrollPosition, setScrollPosition] = useState(0);
+  const [_scrollPosition, setScrollPosition] = useState(0);
 
   useEffect(() => {
     const handleScroll = () => {
