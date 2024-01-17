@@ -5,7 +5,6 @@ import spacehub from '../public/images/works/spacehub.png'
 import mealconnect from '../public/images/works/mealconnect.png'
 import budgetapp from '../public/images/works/budgetapp.png'
 import thumbMathMagicians from '../public/images/works/math-magicians.png'
-import thumbTodoList from '../public/images/works/todo-list.png'
 import Layout from '../components/layouts/article'
 
 const Works = () => {
