@@ -62,14 +62,13 @@ const Page = () => {
           mb={6}
           align="center"
         >
-          Hello I&apos;m a fullstack developer based in Togo 🇹🇬
+          FULL-STACK SOFTWARE DEVELOPER
         </Box>
         <Box display={{ md: 'flex' }}>
           <Box flexGrow={1}>
             <Heading as="h2" variant="page-title">
               Essohanam TAMBANA
             </Heading>
-            <p>Full Stack Developer </p>
           </Box>
           <Box
             flexShrink={0}
@@ -89,16 +88,14 @@ const Page = () => {
             />
           </Box>
         </Box>
-        <Section delay={0.1}>
+        <Section delay={0.5}>
           <Heading id="work" as="h3" variant="section-title">
-            Work
+            
           </Heading>
           <Paragraph>
-            Hi, I&apos;m Essohanam, a full-stack software engineer skilled in
+            Hi, I&apos;m Essohanam, a full-stack software developer skilled in
             Javascript and React. I honed my expertise at Microverse, a remote
-            program emphasizing pair programming. As a Frontend Developer, I
-            delivered strong projects, gaining experience in corporate
-            collaboration and meeting tight deadlines. Passionate about coding,
+            program emphasizing pair programming. Passionate about coding,
             I&apos;m always eager for new challenges and growth opportunities.
           </Paragraph>
         </Section>
@@ -106,24 +103,24 @@ const Page = () => {
 
         <Section delay={0.2}>
           <Heading as="h3" variant="section-title">
-            Tech Stack
+            TECH STACK
           </Heading>
           <BioSection>
             <BioYear>Language:</BioYear>
-            HTML5, CSS3, Javascript, Ruby, PostgreSql.
+            HTML, CSS, Ruby, Javascript (ES5/ES6)
           </BioSection>
           <BioSection>
             <BioYear>Frameworks:</BioYear>
-            React, Rails, Tailwind, Bootstrap, Sass.
+            React, Ruby on rails, Rspec, Capibara
           </BioSection>
-          <BioSection>
-            <BioYear>Proficiencies:</BioYear>
-            Git, GitHub, Chrome Dev Tools.
+          <BioSection className="skills-section">
+            <BioYear>Skills:</BioYear>
+            Database Management, CLI, API Design, Version Control
           </BioSection>
         </Section>
         <Section delay={0.2}>
           <Heading id="bio" as="h3" variant="section-title">
-            Bio
+            BIO
           </Heading>
           <BioSection>
             <BioYear>2016</BioYear>
@@ -162,7 +159,7 @@ const Page = () => {
         </Section>
         <Section delay={0.3}>
           <Heading as="h3" variant="section-title">
-            On the web
+            ON THE WEB
           </Heading>
           <List>
             <ListItem>
@@ -240,8 +237,9 @@ const Page = () => {
         </Section>
         <Section id="contact" delay={0.4}>
           <Heading id="contact" as="h3" variant="section-title">
-            Contact Me
+            GET STARTED
           </Heading>
+          <p>I&apos;m always interested in hearing about new projects, so if you'd like to chat please get in touch.</p>
           <form
             id="form"
             action="https://formspree.io/f/myyawnzb"
