@@ -93,7 +93,7 @@ const Page = () => {
             
           </Heading>
           <Paragraph>
-            Hi, I&apos;m Essohanam, a full-stack software developer skilled in
+            Full-stack web developer skilled in
             Javascript and React. I honed my expertise at Microverse, a remote
             program emphasizing pair programming. Passionate about coding,
             I&apos;m always eager for new challenges and growth opportunities.
@@ -239,7 +239,7 @@ const Page = () => {
           <Heading id="contact" as="h3" variant="section-title">
             GET STARTED
           </Heading>
-          <p>I&apos;m always interested in hearing about new projects, so if you'd like to chat please get in touch.</p>
+          <p>I&apos;m always interested in hearing about new projects, so if you&apos;d like to chat please get in touch.</p>
           <form
             id="form"
             action="https://formspree.io/f/myyawnzb"
