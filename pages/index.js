@@ -89,9 +89,6 @@ const Page = () => {
           </Box>
         </Box>
         <Section delay={0.5}>
-          <Heading id="work" as="h3" variant="section-title">
-            
-          </Heading>
           <Paragraph>
             Full-stack web developer with a backgroung in International Law and Community Law.
             I honed my expertise at Microverse, a remote
