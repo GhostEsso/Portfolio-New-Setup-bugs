@@ -46,8 +46,6 @@ const Page = () => {
     };
   }, []);
   
-  const showBackToTopButton = scrollPosition > 200;
-  
   const scrollToTop = (sectionId = null) => {
     if (sectionId) {
       const section = document.getElementById(sectionId);
