@@ -240,6 +240,7 @@ const Page = () => {
             GET STARTED
           </Heading>
           <p>I&apos;m always interested in hearing about new projects, so if you&apos;d like to chat please get in touch.</p>
+          <br />
           <form
             id="form"
             action="https://formspree.io/f/myyawnzb"
