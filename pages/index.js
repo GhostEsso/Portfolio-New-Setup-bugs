@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import { IoIosArrowUp } from 'react-icons/io'
+import { IoIosArrowUp, IoIosArrowDown } from 'react-icons/io'
 import {
   Box,
   Container,
@@ -32,25 +32,35 @@ const Page = () => {
     window.open(resumeUrl, '_blank')
   }
 
-  const [scrollPosition, setScrollPosition] = useState(0)
+  const [scrollPosition, setScrollPosition] = useState(0);
 
   useEffect(() => {
     const handleScroll = () => {
-      setScrollPosition(window.scrollY)
-    }
-
-    window.addEventListener('scroll', handleScroll)
-
+      setScrollPosition(window.scrollY);
+    };
+  
+    window.addEventListener('scroll', handleScroll);
+  
     return () => {
-      window.removeEventListener('scroll', handleScroll)
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+  
+  const showBackToTopButton = scrollPosition > 200;
+  
+  const scrollToTop = (sectionId = null) => {
+    if (sectionId) {
+      const section = document.getElementById(sectionId);
+      if (section) {
+        window.scrollTo({
+          top: section.offsetTop,
+          behavior: 'smooth',
+        });
+      }
+    } else {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
     }
-  }, [])
-
-  const showBackToToButton = scrollPosition > 200
-
-  const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' })
-  }
+  };  
 
   return (
     <Layout>
@@ -96,10 +106,10 @@ const Page = () => {
             I&apos;m always eager for new challenges and growth opportunities.
           </Paragraph>
         </Section>
-        <Works />
-
-        <Section delay={0.2}>
-          <Heading as="h3" variant="section-title">
+        <Section id="work" delay={0.2}>
+          <Works />
+          <Button onClick={() => scrollToTop('web')}><IoIosArrowDown /></Button>
+          <Heading id="tech" as="h3" variant="section-title">
             TECH STACK
           </Heading>
           <BioSection>
@@ -114,38 +124,7 @@ const Page = () => {
             <BioYear>Skills:</BioYear>
             Database Management, CLI, API Design, Version Control
           </BioSection>
-        </Section>
-        {/* <Section delay={0.2}>
-          <Heading id="bio" as="h3" variant="section-title">
-            BIO
-          </Heading>
-          <BioSection>
-            <BioYear>2016</BioYear>
-            Bachelor degree in International Law and Community Law.
-          </BioSection>
-          <BioSection>
-            <BioYear>2016 - present</BioYear>
-            Technician, Designer: Maintained IT systems for various clients,
-            specializing in operating system installations and antivirus
-            updates. Created custom logos for clients businesses to enhance
-            their brand identities.
-          </BioSection>
-          <BioSection>
-            <BioYear>2022</BioYear>
-            In 2022, I began developing an interest in programming 🖥️ and
-            started self-teaching myself.
-          </BioSection>
-          <BioSection>
-            <BioYear>2023</BioYear>
-            Started Microverse. A remote software development program that uses
-            pair programming and project building to teach development.
-          </BioSection>
-          <BioSection>
-            <BioYear>2023</BioYear>
-            Graduated as a Full-Stack software engineer.
-          </BioSection>
-        </Section> */}
-        <Section delay={0.3}>
+
           <Heading as="h3" variant="section-title">
             I ❤️
           </Heading>
@@ -154,8 +133,8 @@ const Page = () => {
             Football, Anime.
           </Paragraph>
         </Section>
-        <Section delay={0.3}>
-          <Heading as="h3" variant="section-title">
+        <Section id="web" delay={0.3}>
+          <Heading id="web" as="h3" variant="section-title">
             ON THE WEB
           </Heading>
           <List>
@@ -213,8 +192,6 @@ const Page = () => {
               </Link>
             </ListItem>
           </List>
-        </Section>
-        <Section delay={0.5}>
           <button
             onClick={downloadResume}
             style={{
@@ -230,9 +207,10 @@ const Page = () => {
             }}
           >
             Get my Resume
-          </button>
+          </button> <br />
+          <Button onClick={() => scrollToTop('contact')}><IoIosArrowDown /></Button>
         </Section>
-        <Section id="contact" delay={0.4}>
+        <Section delay={0.4}>
           <Heading id="contact" as="h3" variant="section-title">
             GET STARTED
           </Heading>
@@ -316,25 +294,7 @@ const Page = () => {
             </button>
           </form>
         </Section>
-        {showBackToToButton && (
-          <Button
-            onClick={scrollToTop}
-            style={{
-              position: 'fixed',
-              bottom: '20px',
-              right: '20px',
-              borderRadius: '5px',
-              background: '#007bff',
-              color: '#fff',
-              fontSize: '16px',
-              cursor: 'pointer',
-              boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)',
-              transition: 'background 0.3s ease'
-            }}
-          >
-            <IoIosArrowUp />
-          </Button>
-        )}
+        <Button onClick={() => scrollToTop('work')}><IoIosArrowUp /></Button>
       </Container>
     </Layout>
   )
