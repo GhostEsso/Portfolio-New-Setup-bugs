@@ -93,8 +93,8 @@ const Page = () => {
             
           </Heading>
           <Paragraph>
-            Full-stack web developer skilled in
-            Javascript and React. I honed my expertise at Microverse, a remote
+            Full-stack web developer with a backgroung in International Law and Community Law.
+            I honed my expertise at Microverse, a remote
             program emphasizing pair programming. Passionate about coding,
             I&apos;m always eager for new challenges and growth opportunities.
           </Paragraph>
