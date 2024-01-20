@@ -37,11 +37,6 @@ const Page = () => {
     link.click();
     document.body.removeChild(link);
   };
-  
-  // Force le rechargement de l'image
-  const handleImageLoad = () => {
-    setForceImageReload(!forceImageReload);
-  };
 
   const [_scrollPosition, setScrollPosition] = useState(0);
 
@@ -96,7 +91,6 @@ const Page = () => {
             align="center"
           >
             <Image
-              onLoad={handleImageLoad}
               borderColor="whiteAlpha.800"
               borderWidth={2}
               borderStyle="solid"
@@ -105,6 +99,7 @@ const Page = () => {
               borderRadius="full"
               src="image.png"
               alt="image Photo"
+              loading="lazy"
             />
           </Box>
         </Box>
