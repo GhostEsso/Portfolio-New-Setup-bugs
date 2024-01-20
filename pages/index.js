@@ -112,8 +112,8 @@ const Page = () => {
           </Paragraph>
         </Section>
         <Section id="work" delay={0.2}>
-          <Works />
           <Button onClick={() => scrollToTop('web')}><IoIosArrowDown /></Button>
+          <Works />
           <Heading id="tech" as="h3" variant="section-title">
             TECH STACK
           </Heading>
