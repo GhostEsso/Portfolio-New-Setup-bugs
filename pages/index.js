@@ -27,15 +27,16 @@ import Works from './works'
 
 const Page = () => {
   const downloadResume = () => {
-    const resumeUrl = '/resume/Essohanam_Tambana_Resume.pdf'; // Mettez à jour l'URL si nécessaire
+    const resumeUrl = 'https://ghostesso.github.io/Portfolio-New-Setup-bugs/resume/Essohanam_Tambana_Resume.pdf';
     const link = document.createElement('a');
     link.href = resumeUrl;
-    link.target = '_blank'; // Ouvrir dans une nouvelle fenêtre
+    link.target = '_blank';
+    link.rel = 'noopener noreferrer';
     link.download = 'Essohanam_Tambana_Resume.pdf';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
-  };    
+  };     
 
   const [_scrollPosition, setScrollPosition] = useState(0);
 
