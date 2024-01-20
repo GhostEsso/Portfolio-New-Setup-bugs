@@ -27,10 +27,15 @@ import Works from './works'
 
 const Page = () => {
   const downloadResume = () => {
-    const resumeUrl =
-      'https://www.dropbox.com/scl/fi/iny6s6fcqksbwtq7j1t4n/Essohanam_Tambana_Resume.pdf?rlkey=bsyft4rpuhij2bbs9d79eqfvt&dl=0'
-    window.open(resumeUrl, '_blank')
-  }
+    const resumeUrl = '/resume/Essohanam_Tambana_Resume.pdf'; // Mettez à jour l'URL si nécessaire
+    const link = document.createElement('a');
+    link.href = resumeUrl;
+    link.target = '_blank'; // Ouvrir dans une nouvelle fenêtre
+    link.download = 'Essohanam_Tambana_Resume.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };    
 
   const [_scrollPosition, setScrollPosition] = useState(0);
 
