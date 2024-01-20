@@ -91,6 +91,7 @@ const Page = () => {
             align="center"
           >
             <Image
+              key={new Date().getTime()}
               borderColor="whiteAlpha.800"
               borderWidth={2}
               borderStyle="solid"
