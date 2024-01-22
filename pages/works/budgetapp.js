@@ -1,10 +1,13 @@
-import { Container, Badge, Link, ListItem, List } from '@chakra-ui/react'
-import { ExternalLinkIcon } from '@chakra-ui/icons'
-import { Title, WorkImage, Meta } from '../../components/work'
-import P from '../../components/paragraph'
-import Layout from '../../components/layouts/article'
+import { Container, Badge, Link, ListItem, List } from '@chakra-ui/react';
+import { ExternalLinkIcon } from '@chakra-ui/icons';
+import { Title, WorkImage, Meta } from '../../components/work';
+import P from '../../components/paragraph';
+import Layout from '../../components/layouts/article';
 
 const Work = () => {
+  // Remplacez l'import local de l'image par l'URL directe de GitHub
+  const imageUrl = 'https://github.com/GhostEsso/cdn/raw/main/images/works/budgetapp.png?raw=true';
+
   return (
     <Layout title="React Instagram Clone">
       <Container>
@@ -43,9 +46,9 @@ const Work = () => {
           <span>Ruby on Rails</span>
         </ListItem>
       </List>
-      <WorkImage src="../images/works/budgetapp.png" alt="budgetapp" />
+      <WorkImage src={imageUrl} alt="budgetapp" layout="fill" />
     </Layout>
-  )
-}
+  );
+};
 
-export default Work
+export default Work;

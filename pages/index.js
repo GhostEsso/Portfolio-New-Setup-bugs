@@ -216,7 +216,7 @@ const Page = () => {
           <Button onClick={() => scrollToTop('contact')}><IoIosArrowDown /></Button>
         </Section>
         <Section delay={0.4}>
-          <Heading id="contact" as="h3" variant="section-title">
+          <Heading id="contactme" as="h3" variant="section-title">
             GET STARTED
           </Heading>
           <p>I&apos;m always interested in hearing about new projects, so if you&apos;d like to chat please get in touch.</p>

@@ -4,7 +4,6 @@ import Section from '../components/section'
 import { GridItem } from '../components/grid-item'
 import webpack from '../public/images/contents/webpack.png'
 
-
 const Posts = () => (
   <Layout title="Posts">
     <Container>

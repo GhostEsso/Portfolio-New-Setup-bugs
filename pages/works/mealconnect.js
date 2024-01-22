@@ -5,6 +5,7 @@ import P from '../../components/paragraph'
 import Layout from '../../components/layouts/article'
 
 const Work = () => {
+  const imageUrl = 'https://github.com/GhostEsso/cdn/blob/main/images/works/mealconnect.png?raw=true';
   return (
     <Layout title="Meal Connect">
       <Container>
@@ -134,7 +135,7 @@ const Work = () => {
           <span> React, Ruby on Rails, PostgreSql</span>
         </ListItem>
       </List>
-      <WorkImage src="../images/works/mealconnect.png" alt="meal connect" />
+      <WorkImage src={imageUrl} alt="meal connect" layout="fill" />
     </Layout>
   )
 }

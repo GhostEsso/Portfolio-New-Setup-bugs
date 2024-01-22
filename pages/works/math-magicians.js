@@ -5,6 +5,7 @@ import P from '../../components/paragraph'
 import Layout from '../../components/layouts/article'
 
 const Work = () => {
+  const imageUrl = 'https://github.com/GhostEsso/cdn/blob/main/images/works/math-magicians.png?raw=true';
   return (
     <Layout title="React Instagram Clone">
       <Container>
@@ -44,7 +45,7 @@ const Work = () => {
           <span>React, Jest, API</span>
         </ListItem>
       </List>
-      <WorkImage src="../images/works/math-magicians.png" alt="math-magician" />
+      <WorkImage src={imageUrl} alt="math-magician" layout="fill" />
     </Layout>
   )
 }

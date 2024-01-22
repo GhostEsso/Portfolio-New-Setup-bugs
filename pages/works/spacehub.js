@@ -5,6 +5,7 @@ import P from '../../components/paragraph'
 import Layout from '../../components/layouts/article'
 
 const Work = () => {
+  const imageUrl = 'https://github.com/GhostEsso/cdn/blob/main/images/works/spacehub.png?raw=true';
   return (
     <Layout title="Space Hub">
       <Container>
@@ -65,7 +66,7 @@ const Work = () => {
           <span>Ruby on Rails</span>
         </ListItem>
       </List>
-      <WorkImage src="../images/works/spacehub.png" alt="spacehub" />
+      <WorkImage src={imageUrl} alt="spacehub" layout="fill" />
     </Layout>
   )
 }
