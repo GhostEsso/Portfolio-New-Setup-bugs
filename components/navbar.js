@@ -59,14 +59,14 @@ const Navbar = (props) => {
                     flexGrow={1}
                     mt={{ base: 4, nmd: 0 }}
                 >
+                    <LinkItem href="/#contactme" path={path}>
+                        Contact Me
+                    </LinkItem>
                     <LinkItem href="/works" path={path}>
                         Works
                     </LinkItem>
                     <LinkItem href="/posts" path={path}>
                         Posts
-                    </LinkItem>
-                    <LinkItem href="/#contactme" path={path}>
-                        Contact Me
                     </LinkItem>
                 </Stack>
                 <Box flex={1} align="right">
@@ -75,14 +75,14 @@ const Navbar = (props) => {
                         <Menu>
                             <MenuButton as={IconButton} icon={<HamburgerIcon/>} variant="outline" aria-label='Options'/>
                                 <MenuList>
+                                    <NextLink href="/#contactme" passHref>
+                                        <MenuItem as={Link}>Contact Me</MenuItem>
+                                    </NextLink>
                                     <NextLink href="/posts" passHref>
                                         <MenuItem as={Link}>Posts</MenuItem>
                                     </NextLink>
                                     <NextLink href="/works" passHref>
                                         <MenuItem as={Link}>Works</MenuItem>
-                                    </NextLink>
-                                    <NextLink href="/#contactme" passHref>
-                                        <MenuItem as={Link}>Contact Me</MenuItem>
                                     </NextLink>
                                 </MenuList>
                             
