@@ -18,7 +18,7 @@ const LogoBox = styled.span`
 `
 
 const Logo = () => {
-    const footPrintImg = `images/coding${useColorModeValue('-dark', '-dark')}.png`
+    const footPrintImg = "https://github.com/GhostEsso/cdn/blob/main/images/coding-dark.png?raw=true";
 
     return (
         <Link href="/">
@@ -38,4 +38,4 @@ const Logo = () => {
     )
 }
 
-export default Logo
+export default Logo;
