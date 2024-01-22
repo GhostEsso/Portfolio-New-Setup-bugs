@@ -97,7 +97,7 @@ const Page = () => {
               maxWidth="100px"
               display="inline-block"
               borderRadius="full"
-              src="image.png"
+              src="https://github.com/GhostEsso/cdn/blob/main/image.png?raw=true"
               alt="image Photo"
               loading="lazy"
             />
