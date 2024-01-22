@@ -99,7 +99,6 @@ const Page = () => {
               borderRadius="full"
               src="https://github.com/GhostEsso/cdn/blob/main/image.png?raw=true"
               alt="image Photo"
-              loading="lazy"
             />
           </Box>
         </Box>
@@ -213,7 +212,7 @@ const Page = () => {
           >
             Get my Resume
           </button> <br />
-          <Button onClick={() => scrollToTop('contact')}><IoIosArrowDown /></Button>
+          <Button onClick={() => scrollToTop('contactme')}><IoIosArrowDown /></Button>
         </Section>
         <Section delay={0.4}>
           <Heading id="contactme" as="h3" variant="section-title">
