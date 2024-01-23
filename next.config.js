@@ -1,7 +1,7 @@
 /** 
  * @type {import('next').NextConfig}
-*/
-const NextConfig = {
+ */
+module.exports = {
   output: 'export',
   distDir: 'dist',
   images: {
@@ -16,6 +16,26 @@ const NextConfig = {
 
     return config;
   },
+  async headers() {
+    return [
+      {
+        source: '/(.*)',
+        headers: [
+          {
+            key: 'Cache-Control',
+            value: 's-maxage=300', // 5 minutes for immutable assets
+          },
+        ],
+      },
+      {
+        source: '/(.*)',
+        headers: [
+          {
+            key: 'Cache-Control',
+            value: 's-maxage=600', // 10 minutes for SSR pages
+          },
+        ],
+      },
+    ];
+  },
 };
-
-module.exports = NextConfig;
