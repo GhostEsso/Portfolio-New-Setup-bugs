@@ -24,7 +24,6 @@ import {
   IoLogoLinkedin
 } from 'react-icons/io'
 import React from 'react'
-import Works from './works'
 
 const Page = () => {
   const downloadResume = () => {
