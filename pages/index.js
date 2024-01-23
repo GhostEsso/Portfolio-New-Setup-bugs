@@ -68,7 +68,7 @@ const Page = () => {
     }
   }
 
-  const _Works = dynamic(() => import('./works'), { ssr: false });
+  const Works = dynamic(() => import('./works'), { ssr: false });
 
   return (
     <Layout>
