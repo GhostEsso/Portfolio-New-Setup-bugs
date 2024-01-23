@@ -80,7 +80,7 @@ const Page = () => {
           mb={6}
           align="center"
         >
-          FULL-STACK SOFTWARE DEVELOPER
+          FULL STACK SOFTWARE DEVELOPER
         </Box>
         <Box display={{ md: 'flex' }}>
           <Box flexGrow={1}>
