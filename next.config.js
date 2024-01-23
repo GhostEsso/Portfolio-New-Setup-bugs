@@ -3,6 +3,8 @@
  */
 const TerserPlugin = require('terser-webpack-plugin');
 const CompressionPlugin = require('compression-webpack-plugin');
+const PurgeCSSPlugin = require('purgecss-webpack-plugin');
+const glob = require('glob-all');
 
 module.exports = {
   output: 'export',
@@ -27,6 +29,16 @@ module.exports = {
           test: /\.(js|css|html|svg)$/,
           threshold: 8192, // Seuils de compression (ajustez selon vos besoins)
           minRatio: 0.8,
+        })
+      );
+
+      // Utilisez le plugin PurgeCSS pour supprimer les règles CSS inutilisées
+      config.plugins.push(
+        new PurgeCSSPlugin({
+          paths: glob.sync([
+            'pages/**/*.{js,ts,jsx,tsx}',
+            'components/**/*.{js,ts,jsx,tsx}',
+          ]),
         })
       );
     }
