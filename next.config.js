@@ -1,6 +1,9 @@
 /** 
  * @type {import('next').NextConfig}
  */
+const TerserPlugin = require('terser-webpack-plugin');
+const CompressionPlugin = require('compression-webpack-plugin');
+
 module.exports = {
   output: 'export',
   distDir: 'dist',
@@ -12,6 +15,20 @@ module.exports = {
     if (!dev && !isServer) {
       // Exemple : Activer la minification uniquement en production
       config.optimization.minimize = true;
+
+      // Utilisez le plugin TerserPlugin pour la minification
+      config.optimization.minimizer.push(new TerserPlugin());
+
+      // Utilisez le plugin CompressionPlugin pour la compression
+      config.plugins.push(
+        new CompressionPlugin({
+          filename: '[path][base].gz',
+          algorithm: 'gzip',
+          test: /\.(js|css|html|svg)$/,
+          threshold: 8192, // Seuils de compression (ajustez selon vos besoins)
+          minRatio: 0.8,
+        })
+      );
     }
 
     return config;
