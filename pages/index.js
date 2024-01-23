@@ -27,44 +27,45 @@ import Works from './works'
 
 const Page = () => {
   const downloadResume = () => {
-    const resumeUrl = 'https://ghostesso.github.io/Portfolio-New-Setup-bugs/resume/Essohanam_Tambana_Resume.pdf';
-    const link = document.createElement('a');
-    link.href = resumeUrl;
-    link.target = '_blank';
-    link.rel = 'noopener noreferrer';
-    link.download = 'Essohanam_Tambana_Resume.pdf';
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-  };
+    const resumeUrl =
+      'https://ghostesso.github.io/Portfolio-New-Setup-bugs/resume/Essohanam_Tambana_Resume.pdf'
+    const link = document.createElement('a')
+    link.href = resumeUrl
+    link.target = '_blank'
+    link.rel = 'noopener noreferrer'
+    link.download = 'Essohanam_Tambana_Resume.pdf'
+    document.body.appendChild(link)
+    link.click()
+    document.body.removeChild(link)
+  }
 
-  const [_scrollPosition, setScrollPosition] = useState(0);
+  const [_scrollPosition, setScrollPosition] = useState(0)
 
   useEffect(() => {
     const handleScroll = () => {
-      setScrollPosition(window.scrollY);
-    };
-  
-    window.addEventListener('scroll', handleScroll);
-  
+      setScrollPosition(window.scrollY)
+    }
+
+    window.addEventListener('scroll', handleScroll)
+
     return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
-  
+      window.removeEventListener('scroll', handleScroll)
+    }
+  }, [])
+
   const scrollToTop = (sectionId = null) => {
     if (sectionId) {
-      const section = document.getElementById(sectionId);
+      const section = document.getElementById(sectionId)
       if (section) {
         window.scrollTo({
           top: section.offsetTop,
-          behavior: 'smooth',
-        });
+          behavior: 'smooth'
+        })
       }
     } else {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
+      window.scrollTo({ top: 0, behavior: 'smooth' })
     }
-  };  
+  }
 
   return (
     <Layout>
@@ -95,6 +96,8 @@ const Page = () => {
               borderWidth={2}
               borderStyle="solid"
               maxWidth="100px"
+              width="100%"
+              height="auto"
               display="inline-block"
               borderRadius="full"
               src="https://github.com/GhostEsso/cdn/blob/main/image.png?raw=true"
@@ -104,14 +107,16 @@ const Page = () => {
         </Box>
         <Section delay={0.5}>
           <Paragraph>
-            Full-stack web developer with a backgroung in International Law and Community Law.
-            I honed my expertise at Microverse, a remote
-            program emphasizing pair programming. Passionate about coding,
-            I&apos;m always eager for new challenges and growth opportunities.
+            Full-stack web developer with a backgroung in International Law and
+            Community Law. I honed my expertise at Microverse, a remote program
+            emphasizing pair programming. Passionate about coding, I&apos;m
+            always eager for new challenges and growth opportunities.
           </Paragraph>
         </Section>
         <Section id="work" delay={0.2}>
-          <Button onClick={() => scrollToTop('web')}><IoIosArrowDown /></Button>
+          <Button onClick={() => scrollToTop('web')}>
+            <IoIosArrowDown />
+          </Button>
           <Works />
           <Heading id="tech" as="h3" variant="section-title">
             TECH STACK
@@ -211,14 +216,20 @@ const Page = () => {
             }}
           >
             Get my Resume
-          </button> <br />
-          <Button onClick={() => scrollToTop('contactme')}><IoIosArrowDown /></Button>
+          </button>{' '}
+          <br />
+          <Button onClick={() => scrollToTop('contactme')}>
+            <IoIosArrowDown />
+          </Button>
         </Section>
         <Section delay={0.4}>
           <Heading id="contactme" as="h3" variant="section-title">
             GET STARTED
           </Heading>
-          <p>I&apos;m always interested in hearing about new projects, so if you&apos;d like to chat please get in touch.</p>
+          <p>
+            I&apos;m always interested in hearing about new projects, so if
+            you&apos;d like to chat please get in touch.
+          </p>
           <br />
           <form
             id="form"
@@ -298,7 +309,9 @@ const Page = () => {
             </button>
           </form>
         </Section>
-        <Button onClick={() => scrollToTop('work')}><IoIosArrowUp /></Button>
+        <Button onClick={() => scrollToTop('work')}>
+          <IoIosArrowUp />
+        </Button>
       </Container>
     </Layout>
   )
