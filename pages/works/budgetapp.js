@@ -9,8 +9,19 @@ const Work = () => {
   const imageUrl = 'https://github.com/GhostEsso/cdn/raw/main/images/works/budgetapp.png?raw=true';
 
   return (
-    <Layout title="React Instagram Clone">
-      <Container>
+    <Layout title="Budget App">
+      <Container position="relative">
+      <div
+          style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '75%',
+            height: '100%',
+            backgroundColor: 'rgba(0, 100, 0, 0.5)',
+            zIndex: -1,
+          }}
+        ></div>
         <Title>
           Budget App (SmartPocket) <Badge>2023</Badge>
         </Title>

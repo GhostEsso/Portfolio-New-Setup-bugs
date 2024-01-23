@@ -8,9 +8,20 @@ const Work = () => {
   const imageUrl = 'https://github.com/GhostEsso/cdn/blob/main/images/works/math-magicians.png?raw=true';
   return (
     <Layout title="React Instagram Clone">
-      <Container>
+      <Container position="relative">
+      <div
+          style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '75%',
+            height: '100%',
+            backgroundColor: 'rgba(0, 100, 0, 0.5)',
+            zIndex: -1,
+          }}
+        ></div>
         <Title>
-          Math magicians <Badge>2022</Badge>
+          Math magicians <Badge>2023</Badge>
         </Title>
       </Container>
       <P>
