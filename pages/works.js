@@ -27,6 +27,7 @@ const Works = () => {
               id="budgetapp"
               title="Budget App"
               thumbnail={budgetapp}
+              loading="lazy"
             >
               The SmartPocket app manages your expenses. You have the ability to
               make, change, or remove categories and transactions. Each
@@ -38,6 +39,7 @@ const Works = () => {
               id="math-magicians"
               title="Math magicians"
               thumbnail={thumbMathMagicians}
+              loading="lazy"
             >
               &quot;Math magicians&quot; is a website for all fans of
               mathematics. It is a Single Page App (SPA) that allows users to
@@ -51,6 +53,7 @@ const Works = () => {
               id="mealconnect"
               title="Meal Connect"
               thumbnail={mealconnect}
+              loading="lazy"
             >
               MealConnect is a vibrant web application designed for those who
               appreciate the art of cooking and the pleasure of savoring

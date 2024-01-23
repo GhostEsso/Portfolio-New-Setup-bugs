@@ -17,6 +17,7 @@ const Posts = () => (
             title="How to set up webpack easily in a React project"
             thumbnail={webpack}
             href="https://www.linkedin.com/posts/essohanam-tambana_webpack-activity-7084848765458640896-TrLZ?utm_source=combined_share_message&utm_medium=member_desktop"
+            loading="lazy"
           />
         </SimpleGrid>
       </Section>
