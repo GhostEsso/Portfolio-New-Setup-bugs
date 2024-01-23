@@ -77,7 +77,7 @@ const Work = () => {
           <span>Ruby on Rails</span>
         </ListItem>
       </List>
-      <WorkImage src={imageUrl} alt="spacehub" layout="fill" />
+      <WorkImage src={imageUrl} alt="spacehub" layout="fill" loading="lazy" />
     </Layout>
   )
 }

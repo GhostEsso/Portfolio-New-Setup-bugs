@@ -56,7 +56,7 @@ const Work = () => {
           <span>React, Jest, API</span>
         </ListItem>
       </List>
-      <WorkImage src={imageUrl} alt="math-magician" layout="fill" />
+      <WorkImage src={imageUrl} alt="math-magician" layout="fill" loading="lazy" />
     </Layout>
   )
 }
