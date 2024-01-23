@@ -1,3 +1,4 @@
+import dynamic from 'next/dynamic';
 import { useState, useEffect } from 'react'
 import { IoIosArrowUp, IoIosArrowDown } from 'react-icons/io'
 import {
@@ -66,6 +67,8 @@ const Page = () => {
       window.scrollTo({ top: 0, behavior: 'smooth' })
     }
   }
+
+  const Works = dynamic(() => import('./works'), { ssr: false });
 
   return (
     <Layout>
