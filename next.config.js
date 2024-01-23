@@ -1,11 +1,11 @@
+const TerserPlugin = require('terser-webpack-plugin');
+const CompressionPlugin = require('compression-webpack-plugin');
+const { PurgeCSSPlugin } = require('purgecss-webpack-plugin'); // Modifier cette ligne
+const glob = require('glob-all');
+
 /** 
  * @type {import('next').NextConfig}
  */
-const TerserPlugin = require('terser-webpack-plugin');
-const CompressionPlugin = require('compression-webpack-plugin');
-const PurgeCSSPlugin = require('purgecss-webpack-plugin');
-const glob = require('glob-all');
-
 module.exports = {
   output: 'export',
   distDir: 'dist',
